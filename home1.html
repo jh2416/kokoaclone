@@ -19,13 +19,20 @@
         <pre>lalalalalalalalalalala</pre>   <!-- p tag랑 글꼴만 다름 -->
         <p>My name is <abbr title="Nicolas Serrano Arevalo">NSA</abbr></p>
         <form>
-            <label for="profile">Profile Photo</label> <!-- input과 같이 작용, for안에 input의 id와 같은거 넣어줌 -->
-            <input id="profile" type="file" accept=".png,.pdf"/>
-            <input placeholder="Name" type="text"/>
-            <input placeholder="Last Name" type="password"/>
-            <input placeholder="Username" type="color"/>
-            <input placeholder="Password" type="password"/>
-            <input type="submit" value="Create Account"/>
+            <!-- <label for="profile">Profile Photo</label> label tag : input과 같이 작용, for안에 input의 id와 같은거 넣어줌 
+            <input id="profile" type="file" accept=".png,.pdf"/> -->
+            <label for="first-name">First Name</label>  <!-- First Name글자 누르면 다음줄 input태그가 활성화 됨 -->
+            <input id="first-name" placeholder="Name" type="text"/>
+
+            <label for="website">Website</label>
+            <input id="website" required placeholder="Name" type="url"/>    <!-- 입력받는 값 type으로 제한 가능 -->
+            
+            <label for="email">E-mail</label>
+            <input id="email" placeholder="E-mail" type="email"/>
+
+            
+            <!-- <input placeholder="Password" type="password"/>
+            <input type="submit" value="Create Account"/> -->
         </form>
     </body>
 </html>
