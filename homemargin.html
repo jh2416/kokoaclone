@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="kr">
-    <head>
-        <title>Home - My first website.</title>
-        <link href="styles.css" rel="stylesheet"/>
-        <style> 
-            html{
-                background-color: tomato;
-            } 
-            body{
-                margin: 20px;
-                padding: 20px;
-                background-color: thistle;
-            }  
-            div{
-                /* display: inline;    block(default) -> inline으로 변환, 사라짐, 왜? inline은 content가 있어야함, w, h가 첫글자의 크기가 됨 */
-                padding: 10px;
-            }
+  <head>
+    <title>Home - My first website.</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      * {
+        border: 1px dashed black;
+      }
+      html {
+        background-color: tomato;
+      }
+      body {
+        margin: 20px;
+        padding: 20px;
+        background-color: thistle;
+      }
+      div {
+        /* display: inline;    block(default) -> inline으로 변환, 사라짐, 왜? inline은 content가 있어야함, w, h가 첫글자의 크기가 됨 */
+        padding: 20px;
+        border: 2px solid black;
+      }
 
-            #first{
-                background-color: whitesmoke;
-                width: 150px;
-                height: 150px;
-            }
+      #first {
+        background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+      }
 
-            #second{
-                background-color: teal;
-                width: 100px;
-                height: 100px;
-            }
+      #second {
+        background-color: teal;
+        width: 100px;
+        height: 100px;
+      }
 
-            #third{
-                background-color: wheat;
-                width: 50px;
-                height: 50px;
-            }
+      #third {
+        background-color: wheat;
+        width: 50px;
+        height: 50px;
+      }
 
-            #fourth{
-                background-color: blanchedalmond;
-                width: 25px;
-                height: 25px;
-            }
-            /* span{
+      #fourth {
+        background-color: blanchedalmond;
+        width: 25px;
+        height: 25px;
+      }
+
+      span {
+        border-style: dotted;
+      }
+      /* span{
                       display: block;     inline(default) -> block으로 변환 
                 background-color: turquoise;
             }
@@ -48,15 +56,15 @@
                 height: 300px;
                 width: 300px;
             } */
-        </style>   
-    </head>
-    <body>
-        <div id="first">
-            <div id="second">
-                <div id="third">
-                    <div id="fourth"></div>
-                </div>
-            </div>
+    </style>
+  </head>
+  <body>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <span>hello</span>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
