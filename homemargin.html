@@ -8,27 +8,55 @@
                 background-color: tomato;
             } 
             body{
+                margin: 20px;
+                padding: 20px;
                 background-color: thistle;
-                margin: 20px 15px 10px 5px;
             }  
             div{
-                margin-left: 50px;
                 /* display: inline;    block(default) -> inline으로 변환, 사라짐, 왜? inline은 content가 있어야함, w, h가 첫글자의 크기가 됨 */
-                height: 150px;
-                width: 150px;
-                background-color: whitesmoke;
+                padding: 10px;
             }
-            span{
-                /* display: block;     inline(default) -> block으로 변환 */
+
+            #first{
+                background-color: whitesmoke;
+                width: 150px;
+                height: 150px;
+            }
+
+            #second{
+                background-color: teal;
+                width: 100px;
+                height: 100px;
+            }
+
+            #third{
+                background-color: wheat;
+                width: 50px;
+                height: 50px;
+            }
+
+            #fourth{
+                background-color: blanchedalmond;
+                width: 25px;
+                height: 25px;
+            }
+            /* span{
+                      display: block;     inline(default) -> block으로 변환 
                 background-color: turquoise;
             }
             img{
                 height: 300px;
                 width: 300px;
-            }
+            } */
         </style>   
     </head>
     <body>
-        <div></div>
+        <div id="first">
+            <div id="second">
+                <div id="third">
+                    <div id="fourth"></div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
