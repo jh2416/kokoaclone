@@ -10,14 +10,21 @@
         margin: 20px;
         display: flex;
         justify-content: space-between; /* main-axis */
-        align-items: stretch; /* cross-axis */
+        flex-direction: column-reverse; /*main-axis 변경, default:row*/
+        align-items: center; /* cross-axis */
+        flex-wrap: wrap-reverse;
       }
       #second {
         background-color: wheat;
       }
       div {
-        width: 100px;
-        /* height: 100px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        font-size: 28px;
+        color: white;
         background-color: teal;
       }
     </style>
@@ -25,8 +32,8 @@
   <!-- 부모 엘리먼트 -->
   <body>
     <!-- 자식 엘리먼트 -->
-    <div></div>
-    <div id="second"></div>
-    <div></div>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
   </body>
 </html>
