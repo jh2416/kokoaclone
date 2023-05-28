@@ -1,4 +1,5 @@
 body {
+  /*전체페이지*/
   background: tomato;
   height: 100vh;
   display: flex;
@@ -7,6 +8,7 @@ body {
 }
 
 .father {
+  /*메인 박스*/
   width: 200px;
   height: 200px;
   padding: 20px;
@@ -20,6 +22,7 @@ body {
 }
 
 .inside {
+  /*정사각형 박스 두개, 위/아래 */
   background: teal;
   height: 50px;
   width: 50px;
@@ -27,6 +30,7 @@ body {
 }
 
 .inside-second {
-  width: 100%;
+  /*가운데 점선테두리 직사각형*/
+  width: 100%; /* padding 20px때문에 100%해도 안쪽에 고정 */
   border-style: dashed;
 }
